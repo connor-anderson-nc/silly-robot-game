@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbyexu6nmjx70"]
+
+[ext_resource type="Texture2D" uid="uid://ytmqxfa7ykyp" path="res://textures/grounds/ground1.png" id="1_kcisp"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lv8ek"]
+texture = ExtResource("1_kcisp")
+texture_region_size = Vector2i(50, 50)
+
+[sub_resource type="TileSet" id="TileSet_yfmeo"]
+tile_size = Vector2i(50, 50)
+sources/1 = SubResource("TileSetAtlasSource_lv8ek")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_yfmeo")
