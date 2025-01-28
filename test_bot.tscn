@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ewjjb5e70j1j"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_70bia"]
+size = Vector2(25, 25)
+
+[node name="test_bot" type="Sprite2D"]
+z_index = 20
+texture = SubResource("PlaceholderTexture2D_70bia")
