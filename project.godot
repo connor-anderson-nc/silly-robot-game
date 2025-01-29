@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 project/assembly_name="robot-tactics-game"
 
+[global_group]
+
+friendly_bot=""
+
 [input]
 
 mouse1={

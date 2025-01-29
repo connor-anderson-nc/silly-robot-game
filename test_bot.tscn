@@ -1,8 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://ewjjb5e70j1j"]
+[gd_scene load_steps=3 format=3 uid="uid://ewjjb5e70j1j"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_70bia"]
-size = Vector2(25, 25)
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_cmlyu"]
+size = Vector2(30, 30)
 
-[node name="test_bot" type="Sprite2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q5xdp"]
+size = Vector2(50, 50)
+
+[node name="test_bot" type="Area2D" groups=["friendly_bot"]]
 z_index = 20
-texture = SubResource("PlaceholderTexture2D_70bia")
+
+[node name="sprite" type="Sprite2D" parent="."]
+texture = SubResource("PlaceholderTexture2D_cmlyu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_q5xdp")
